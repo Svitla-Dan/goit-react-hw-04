@@ -1,0 +1,44 @@
+.searchBar {
+  width: 100%;
+  background-color: #4a90e2; /* інший колір */
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 12px;
+  padding-left: 36px; /* Відступ для іконки */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #2a7db1;
+}
+
+.searchButton {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2a7db1;
+}
+
+.searchButton:hover {
+  color: #1e6d8c;
+}

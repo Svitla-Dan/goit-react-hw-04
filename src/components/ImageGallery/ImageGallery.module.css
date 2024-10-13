@@ -1,0 +1,35 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.galleryItem {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.galleryItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    padding: 20px;
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery {
+    gap: 16px;
+    padding: 24px;
+  }
+}
