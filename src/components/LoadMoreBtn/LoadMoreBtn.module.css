@@ -1,10 +1,10 @@
 .loadMore {
   margin-bottom: 24px;
   padding: 10px 20px;
-  background-color: #5c9ded; /* м'який синій колір */
+  background-color: #5c9ded;
   color: white;
   border: none;
-  border-radius: 6px; /* трохи менше округлення */
+  border-radius: 6px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -15,10 +15,10 @@
 
 .loadMore:hover,
 .loadMore:focus {
-  background-color: #4682b4; /* більш насичений синій при наведенні */
-  transform: scale(1.05); /* ефект збільшення при наведенні */
+  background-color: #4682b4;
+  transform: scale(1.05);
 }
 
 .loadMore:active {
-  transform: scale(0.95); /* зменшення при натисканні */
+  transform: scale(0.95);
 }

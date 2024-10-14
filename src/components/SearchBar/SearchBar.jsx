@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiSearch } from "react-icons/fi"; // Додамо іконку пошуку
+import { FiSearch } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
 import styles from "./SearchBar.module.css";
 
@@ -13,7 +13,7 @@ const SearchBar = ({ onSubmit }) => {
       return;
     }
     onSubmit(query);
-    setQuery(""); // Очищення поля після сабміту
+    setQuery("");
   };
 
   return (
@@ -29,7 +29,7 @@ const SearchBar = ({ onSubmit }) => {
           className={styles.searchInput}
         />
         <button type="submit" className={styles.searchButton}>
-          <FiSearch size="20px" /> {/* Іконка для кнопки */}
+          <FiSearch size="20px" />
         </button>
       </form>
       <Toaster position="top-right" reverseOrder={false} />
